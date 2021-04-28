@@ -49,6 +49,7 @@ body, input{
     display: grid;
     grid-template-columns: 1fr;
     z-index: 5;
+    transition: 1s 0.7s ease-in-out;
 }
 
 form{
@@ -240,4 +241,16 @@ form.formulario-inscrever{
 .container.inscreve-mode .right-panel .content, 
 .container.inscreve-mode .right-panel .image{
     transform: translateX(0);
+}
+
+.container.inscreve-mode .left-panel{
+    pointer-events: none;
+}
+
+.container.inscreve-mode .right-panel{
+    pointer-events: all;
+}
+
+.container.inscreve-mode .entrar-inscrever{
+    left: 25%;
 }
